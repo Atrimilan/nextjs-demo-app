@@ -7,7 +7,7 @@ When following the [Udemy course](https://www.udemy.com/course/nextjs-react-the-
 
 The best approach in Next.js is to fetch data server-side, this is also an advantage for SEO because the fetched data is inside the source code rendered on the client.
 
-Then, as we don't need an external API for this project, the 3rd approach has been chosen. Thus we don't need to run the Express.js backend when running the Next.js application, and the **data.db** file in [the root folder](../../../) is used as is in the Next.js code.
+Then, as we don't need an external API for this project, the 3rd approach has been chosen. Thus we don't need to run the Express.js backend when running the Next.js application, and the **data.db** file in [the root folder](./) is used as is in the Next.js code.
 
 ## Try out the two other approaches
 

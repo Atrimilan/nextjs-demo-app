@@ -76,9 +76,15 @@ These apps are based on the following Udemy course : [Next.js 15 & React - The C
 * `npm install`
 
 ### Add your Cloudinary credentials :
+* Create a **.env.local** file in [the root folder](6-mutating-data) with the following fields:
+  ```env
+  CLOUDINARY_CLOUD_NAME=
+  CLOUDINARY_API_KEY=
+  CLOUDINARY_API_SECRET=
+  ```
 * Create a free https://cloudinary.com/ account.
 * In your home dashboard, find your API key or create a new one.
-* Then use your `Cloud name`, `API Key` and `API Secret` to fill in all [.env.local](6-mutating-data/.env.local) fields.
+* Then fill in all **.env.local** fields with your `Cloud name`, `API Key` and `API Secret` .
 
 ### Run Next.js app in DEV mode :
 * `npm run dev`
