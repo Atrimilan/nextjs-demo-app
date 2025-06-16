@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-// This is not useful in this project, but it might be useful to edit an incoming request,
+// This middleware is not useful in this project, but it might be useful to edit an incoming request,
 // to block it, to add authentication, etc.
 // See :
 // - https://nextjs.org/docs/app/api-reference/file-conventions/middleware
