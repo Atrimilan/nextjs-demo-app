@@ -18,7 +18,7 @@ First, initialize and start the Express.js backend :
 
 ### Client-side data fetching using the Express.js backend :
 
-Replace the [page.jsx](page.jsx) code with the following :
+Replace the [page.jsx](app/(content)/news/page.jsx) code with the following :
 
 ```jsx
 "use client";
@@ -74,7 +74,7 @@ export default function NewsPage() {
 
 ### Server-side data fetching using the Express.js backend :
 
-Replace the [page.jsx](page.jsx) code with the following :
+Replace the [page.jsx](app/(content)/news/page.jsx) code with the following :
 
 ```jsx
 import NewsList from "@/components/news-list";

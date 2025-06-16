@@ -65,3 +65,29 @@ These apps are based on the following Udemy course : [Next.js 15 & React - The C
 
 </dl></dd></dl></dd>
 </details>
+
+<!-- 6-mutating-data -->
+
+<details>
+<summary>6-mutating-data</summary>
+<dl><dd><dl><dd>
+
+### Initialize project :
+* `npm install`
+
+### Add your Cloudinary credentials :
+* Create a free https://cloudinary.com/ account.
+* In your home dashboard, find your API key or create a new one.
+* Then use your `Cloud name`, `API Key` and `API Secret` to fill in all [.env.local](6-mutating-data/.env.local) fields.
+
+### Run Next.js app in DEV mode :
+* `npm run dev`
+
+### Run Next.js app in PROD mode :
+* `npm run build`
+* `npm start`
+
+> Note that **posts.db** will be automatically created when starting the application.
+
+</dl></dd></dl></dd>
+</details>
