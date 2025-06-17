@@ -9,7 +9,7 @@ The best approach in Next.js is to fetch data server-side, this is also an advan
 
 Then, as we don't need an external API for this project, the 3rd approach has been chosen. Thus we don't need to run the Express.js backend when running the Next.js application, and the **data.db** file in [the root folder](./) is used as is in the Next.js code.
 
-## Try out the two other approaches
+## Trying out the two other approaches
 
 First, initialize and start the Express.js backend :
 * `cd backend/`
