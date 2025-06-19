@@ -20,10 +20,9 @@ const lucia = new Lucia(adapter, {
     }
 });
 
-function setSessionCookie(sessionCookie) {
-    // From Next.js 15, cookies() function must be awaited : https://nextjs.org/docs/app/api-reference/functions/cookies
-    /* @next-codemod-error Manually await this call and refactor the function to be async */
-    cookies().set(
+async function setSessionCookie(sessionCookie) {
+    // As of Next.js 15, cookies() function must be awaited : https://nextjs.org/docs/app/api-reference/functions/cookies
+    (await cookies()).set(
         sessionCookie.name,
         sessionCookie.value,
         sessionCookie.attributes
@@ -33,7 +32,7 @@ function setSessionCookie(sessionCookie) {
 export async function createAuthSession(userId) {
     const session = await lucia.createSession(userId, {});
     const sessionCookie = lucia.createSessionCookie(session.id);
-    setSessionCookie(sessionCookie);
+    await setSessionCookie(sessionCookie);
 }
 
 export async function verifyAuth() {
@@ -51,11 +50,11 @@ export async function verifyAuth() {
     try {
         if (result.session?.fresh) {
             const sessionCookie = lucia.createSessionCookie(result.session.id);
-            setSessionCookie(sessionCookie);
+            await setSessionCookie(sessionCookie);
         }
         if (!result.session) {
             const sessionCookie = lucia.createBlankSessionCookie();
-            setSessionCookie(sessionCookie); // This will basically clear the session cookie
+            await setSessionCookie(sessionCookie); // This will basically clear the session cookie
         }
     } catch { }
 
@@ -72,5 +71,5 @@ export async function destroySession() {
     await lucia.invalidateSession(session.id); // Delete the session from the database
 
     const sessionCookie = lucia.createBlankSessionCookie();
-    setSessionCookie(sessionCookie); // Then clear the session cookie
+    await setSessionCookie(sessionCookie); // Then clear the session cookie
 }

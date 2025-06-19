@@ -39,6 +39,9 @@ These apps are based on the following Udemy course : [Next.js 15 & React - The C
 <dl><dd><dl><dd>
 
 ### I. Note
+
+This project uses the App Routers that was introduced in Next.js 13, instead of the classic Pages Router.
+
 This project also contains an example of [route.js](4-routing-and-rendering/app/(content)/api/route.js) and [middleware.js](4-routing-and-rendering/middleware.js) for demo, but they are not used.
 
 ### II. Initialize project
@@ -176,9 +179,12 @@ It also contains examples of **static and dynamic metadata**, which are very imp
 <dl><dd><dl><dd>
 
 ### I. Note
-⚠️ This project uses Lucia Auth v3 which is now deprecated. See the official announcement : https://github.com/lucia-auth/lucia/discussions/1714.
+✅This project has been updated to Next.js 15, to fix a small problem when first loading the application on http://localhost:3000/training instead of http://localhost:3000/, the global CSS was not loading for some reason. This update was done following the official recommendations : [**How to upgrade to version 15**](https://nextjs.org/docs/app/guides/upgrading/version-15).
+> The update involved running a codemod to update to the latest version of Next.js (which was 15.3.4) and manually changing a few lines of code that were causing errors.<br/>
+> _Last commit before updating to Next.js 15 : `a892f1a0d3962f6b7fcfe070dbc4c910678282e9`._
 
-In a real project, we could use a more recent version of [Lucia Auth](https://lucia-auth.com/sessions/overview), or an alternative such as [Stack Auth](https://stack-auth.com/) or [Auth.js](https://authjs.dev/) (formerly "NextAuth.js"), which are all compatible with Next.js.
+⚠️ This project uses Lucia Auth v3 which is now deprecated. See the official announcement : https://github.com/lucia-auth/lucia/discussions/1714.
+> In a real project, we could use a more recent version of [Lucia Auth](https://lucia-auth.com/sessions/overview), or an alternative such as [Stack Auth](https://stack-auth.com/) or [Auth.js](https://authjs.dev/) (formerly "NextAuth.js"), which are all compatible with Next.js.
 
 Main files in this project :
 * [**Home page form**](9-user-authentication/components/auth-form.js) to sign up or log in.

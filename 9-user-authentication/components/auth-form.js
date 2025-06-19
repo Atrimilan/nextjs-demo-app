@@ -1,8 +1,7 @@
-import { useActionState } from "react";
 "use client";
 
+import { useActionState } from "react";
 import Link from 'next/link';
-
 import { auth } from '@/actions/auth-actions';
 
 export default function AuthForm({ mode }) { // For this demo, mode is either 'login' or 'signup'
