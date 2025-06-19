@@ -114,7 +114,6 @@ This project also contains an example of [route.js](4-routing-and-rendering/app/
 <dl><dd><dl><dd>
 
 ### I. Note
-
 This project contains examples to manage cache to improve performance, or to force cache revalidation when required without reloading the whole page.
 
 The current configuration works as is, but if you want to try out other caching management approaches, **take a look at [CacheManagement.md](7-cache-management/CacheManagement.md)** (some details are available in the code itself).
@@ -122,7 +121,6 @@ The current configuration works as is, but if you want to try out other caching 
 > ⚠️ Note that this is a Next.js 14 project, and there are major caching changes in Next.js 15.
 
 ### II. Initialize project
-
 #### A. Install dependencies :
 * `npm install`
 
@@ -139,7 +137,6 @@ The current configuration works as is, but if you want to try out other caching 
 <dl><dd><dl><dd>
 
 ### I. Note
-
 This project contains examples of **image optimization**, which are important for compliance with [Core Web Vitals](https://developers.google.com/search/docs/appearance/core-web-vitals), especially to prevent layout shifting and improve loading :
 * Optimization of images from the assets in [header.js](8-app-optimization/components/header.js).
 * Optimization of fetched images in [posts.js](8-app-optimization/components/posts.js). This one required special configuration in [next.config.mjs](8-app-optimization/next.config.mjs) to allow fetching images from another domain.
@@ -152,7 +149,6 @@ It also contains examples of **static and dynamic metadata**, which are very imp
 > ⚠️ Note that this project doesn't contain any OpenGraph metadata example, but it's possible to define some : https://nextjs.org/docs/app/api-reference/functions/generate-metadata#opengraph
 
 ### II. Initialize project
-
 #### A. Install dependencies :
 * `npm install`
 
@@ -168,6 +164,33 @@ It also contains examples of **static and dynamic metadata**, which are very imp
 * Then fill in all **.env.local** fields with your `Cloud name`, `API Key` and `API Secret`.
 
 #### C. Run Next.js app :
+* `npm run dev`
+
+</dl></dd></dl></dd>
+</details>
+
+<!-- 9-user-authentication -->
+
+<details>
+<summary>9-user-authentication</summary>
+<dl><dd><dl><dd>
+
+### I. Note
+⚠️ This project uses Lucia Auth v3 which is now deprecated. See the official announcement : https://github.com/lucia-auth/lucia/discussions/1714.
+
+In a real project, we could use a more recent version of [Lucia Auth](https://lucia-auth.com/sessions/overview), or an alternative such as [Stack Auth](https://stack-auth.com/) or [Auth.js](https://authjs.dev/) (formerly "NextAuth.js"), which are all compatible with Next.js.
+
+Main files in this project :
+* [**Home page form**](9-user-authentication/components/auth-form.js) to sign up or log in.
+* [**Authentication server actions**](9-user-authentication/actions/auth-actions.js) listening to form submissions.
+* [**Authentication methods**](9-user-authentication/lib/auth.js) that handle session cookies using Lucia Auth, which is a third-party authentication library (it actually calls the database).
+* [**Logout button**](9-user-authentication/app/(auth)/layout.js) available in the layout of every page that requires authentication.
+
+### II. Initialize project
+#### A. Install dependencies :
+* `npm install`
+
+#### B. Run Next.js app :
 * `npm run dev`
 
 </dl></dd></dl></dd>
