@@ -22,6 +22,7 @@ const lucia = new Lucia(adapter, {
 
 function setSessionCookie(sessionCookie) {
     // From Next.js 15, cookies() function must be awaited : https://nextjs.org/docs/app/api-reference/functions/cookies
+    /* @next-codemod-error Manually await this call and refactor the function to be async */
     cookies().set(
         sessionCookie.name,
         sessionCookie.value,
@@ -36,7 +37,7 @@ export async function createAuthSession(userId) {
 }
 
 export async function verifyAuth() {
-    const sessionCookie = cookies().get(lucia.sessionCookieName);
+    const sessionCookie = (await cookies()).get(lucia.sessionCookieName);
     if (!sessionCookie) {
         return { user: null, session: null };
     }

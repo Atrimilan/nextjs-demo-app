@@ -1,13 +1,13 @@
+import { useActionState } from "react";
 "use client";
 
 import Link from 'next/link';
-import { useFormState } from 'react-dom';
 
 import { auth } from '@/actions/auth-actions';
 
 export default function AuthForm({ mode }) { // For this demo, mode is either 'login' or 'signup'
 
-  const [formState, formAction] = useFormState(
+  const [formState, formAction] = useActionState(
     auth.bind(null, mode), // .bind() preconfigures the auth() function
     {} // Initial state
   ); 
