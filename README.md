@@ -11,6 +11,8 @@ These apps are based on the following Udemy course : [Next.js 15 & React - The C
 <summary>3-foodies-starting-project</summary>
 <dl><dd><dl><dd>
 
+![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+
 ### I. Note
 **Submitting images won't work in Production mode**, as we're storing images dynamically in the [public folder](./public/images), and Next.js ignores this folder when building the application. Then, this feature only works in Development mode.
 
@@ -38,6 +40,8 @@ These apps are based on the following Udemy course : [Next.js 15 & React - The C
 <summary>4-routing-and-rendering</summary>
 <dl><dd><dl><dd>
 
+![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+
 ### I. Note
 
 This project uses the App Routers that was introduced in Next.js 13, instead of the classic Pages Router.
@@ -60,6 +64,8 @@ This project also contains an example of [route.js](4-routing-and-rendering/app/
 <summary>5-data-fetching</summary>
 <dl><dd><dl><dd>
 
+![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+
 ### I. Note
 **Express.js backend does not need to run.** This backend server is temporarily useful for following the [Udemy course](https://www.udemy.com/course/nextjs-react-the-complete-guide/) (Section 5), but then everything is modified to use the database with Next.js data fetching instead of using this external Express.js API. **More info here : [DataFetching.md](5-data-fetching/DataFetching.md).**
 
@@ -80,6 +86,8 @@ This project also contains an example of [route.js](4-routing-and-rendering/app/
 <details>
 <summary>6-mutating-data</summary>
 <dl><dd><dl><dd>
+
+![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
 
 ### I. Note
 **posts.db** will be automatically created when starting the application.
@@ -116,6 +124,8 @@ This project also contains an example of [route.js](4-routing-and-rendering/app/
 <summary>7-cache-management</summary>
 <dl><dd><dl><dd>
 
+![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+
 ### I. Note
 This project contains examples to manage cache to improve performance, or to force cache revalidation when required without reloading the whole page.
 
@@ -138,6 +148,8 @@ The current configuration works as is, but if you want to try out other caching 
 <details>
 <summary>8-app-optimization</summary>
 <dl><dd><dl><dd>
+
+![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
 
 ### I. Note
 This project contains examples of **image optimization**, which are important for compliance with [Core Web Vitals](https://developers.google.com/search/docs/appearance/core-web-vitals), especially to prevent layout shifting and improve loading :
@@ -177,6 +189,8 @@ It also contains examples of **static and dynamic metadata**, which are very imp
 <details>
 <summary>9-user-authentication</summary>
 <dl><dd><dl><dd>
+
+![Next.js 15](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
 
 ### I. Note
 ✅This project has been updated to Next.js 15, to fix a small problem when first loading the application on http://localhost:3000/training instead of http://localhost:3000/, the global CSS was not loading for some reason. This update was done following the official recommendations : [**How to upgrade to version 15**](https://nextjs.org/docs/app/guides/upgrading/version-15).
