@@ -11,7 +11,7 @@ export default function Header() {
     <header id="main-header">
       <Link href="/">
         <Image
-          // sizes="10vw" // "sizes" is preferred over "fidth" and "height"
+          // sizes="10vw" // "sizes" is preferred over "width" and "height"
           width={100}
           height={100}
           priority // Remove the useless lazy loading as we always want to show the image

@@ -11,7 +11,8 @@ These apps are based on the following Udemy course : [Next.js 15 & React - The C
 <summary>3-foodies-starting-project</summary>
 <dl><dd><dl><dd>
 
-![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+<br/>
+<img src="https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey" height="25" alt="Next.js 14" title="Next.js 14">
 
 ### I. Note
 **Submitting images won't work in Production mode**, as we're storing images dynamically in the [public folder](./public/images), and Next.js ignores this folder when building the application. Then, this feature only works in Development mode.
@@ -40,7 +41,8 @@ These apps are based on the following Udemy course : [Next.js 15 & React - The C
 <summary>4-routing-and-rendering</summary>
 <dl><dd><dl><dd>
 
-![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+<br/>
+<img src="https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey" height="25" alt="Next.js 14" title="Next.js 14">
 
 ### I. Note
 
@@ -64,7 +66,8 @@ This project also contains an example of [route.js](4-routing-and-rendering/app/
 <summary>5-data-fetching</summary>
 <dl><dd><dl><dd>
 
-![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+<br/>
+<img src="https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey" height="25" alt="Next.js 14" title="Next.js 14">
 
 ### I. Note
 **Express.js backend does not need to run.** This backend server is temporarily useful for following the [Udemy course](https://www.udemy.com/course/nextjs-react-the-complete-guide/) (Section 5), but then everything is modified to use the database with Next.js data fetching instead of using this external Express.js API. **More info here : [DataFetching.md](5-data-fetching/DataFetching.md).**
@@ -87,7 +90,8 @@ This project also contains an example of [route.js](4-routing-and-rendering/app/
 <summary>6-mutating-data</summary>
 <dl><dd><dl><dd>
 
-![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+<br/>
+<img src="https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey" height="25" alt="Next.js 14" title="Next.js 14">
 
 ### I. Note
 **posts.db** will be automatically created when starting the application.
@@ -124,7 +128,8 @@ This project also contains an example of [route.js](4-routing-and-rendering/app/
 <summary>7-cache-management</summary>
 <dl><dd><dl><dd>
 
-![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+<br/>
+<img src="https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey" height="25" alt="Next.js 14" title="Next.js 14">
 
 ### I. Note
 This project contains examples to manage cache to improve performance, or to force cache revalidation when required without reloading the whole page.
@@ -149,7 +154,8 @@ The current configuration works as is, but if you want to try out other caching 
 <summary>8-app-optimization</summary>
 <dl><dd><dl><dd>
 
-![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+<br/>
+<img src="https://img.shields.io/badge/Next.js-14-black?style=flat&logo=nextdotjs&labelColor=black&color=grey" height="25" alt="Next.js 14" title="Next.js 14">
 
 ### I. Note
 This project contains examples of **image optimization**, which are important for compliance with [Core Web Vitals](https://developers.google.com/search/docs/appearance/core-web-vitals), especially to prevent layout shifting and improve loading :
@@ -190,7 +196,8 @@ It also contains examples of **static and dynamic metadata**, which are very imp
 <summary>9-user-authentication</summary>
 <dl><dd><dl><dd>
 
-![Next.js 15](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=nextdotjs&labelColor=black&color=grey)
+<br/>
+<img src="https://img.shields.io/badge/Next.js-15-black?style=flat&logo=nextdotjs&labelColor=black&color=grey" height="25" alt="Next.js 15" title="Next.js 15">
 
 ### I. Note
 ✅This project has been updated to Next.js 15, to fix a small problem when first loading the application on http://localhost:3000/training instead of http://localhost:3000/, the global CSS was not loading for some reason. This update was done following the official recommendations : [**How to upgrade to version 15**](https://nextjs.org/docs/app/guides/upgrading/version-15).
@@ -205,6 +212,30 @@ Main files in this project :
 * [**Authentication server actions**](9-user-authentication/actions/auth-actions.js) listening to form submissions.
 * [**Authentication methods**](9-user-authentication/lib/auth.js) that handle session cookies using Lucia Auth, which is a third-party authentication library (it actually calls the database).
 * [**Logout button**](9-user-authentication/app/(auth)/layout.js) available in the layout of every page that requires authentication.
+
+### II. Initialize project
+#### A. Install dependencies :
+* `npm install`
+
+#### B. Run Next.js app :
+* `npm run dev`
+
+</dl></dd></dl></dd>
+</details>
+
+<!-- 12-pages-router-project -->
+
+<details>
+<summary>12-pages-router-project</summary>
+<dl><dd><dl><dd>
+
+<br/>
+<img src="https://img.shields.io/badge/Next.js-13-black?style=flat&logo=nextdotjs&labelColor=black&color=grey" height="25" alt="Next.js 13" title="Next.js 13">
+
+### I. Note
+This demo project uses Pages Router, unlike previous projects which use App Router.
+
+⚠️ Note that this is a Next.js 13 project, _which is the version where App Router was introduced_, there are a few differences with previous projects.
 
 ### II. Initialize project
 #### A. Install dependencies :
